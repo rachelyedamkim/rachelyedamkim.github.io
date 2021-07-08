@@ -2,15 +2,24 @@
 <html>
  	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Today's Date</title>
+    <title>rachel yedam kim</title>
+
 <body>
 	<script src="js/script.js"></script>
 <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. Hi Joonyonz</p>
-<p>I'm going to make a very useless Random Fact Generator</p>
+
+<button type="button" onclick="myFunction()"> Random Fact Generator</button>
+
+        <script>
+            function myFunction()
+            {
+               var things = ['Rock', 'Paper', 'Scissor'];
+				var thing = things[Math.floor(Math.random()*things.length)];
+	document.write('The computer chose: ' + thing);
+            }
+        </script>
 
 
-<span id="timer"></span> s
-
+<span id="timer"></span>
 </body>
 </html>
